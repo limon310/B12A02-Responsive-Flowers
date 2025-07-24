@@ -191,6 +191,113 @@ body{
     top: -150px;
 }
 
+/* latest deals section style  */
+
+.latest-deals{
+    text-align: center;
+    display: none;
+}
+.latest-deals-title{
+    font-size: 3.1rem;
+    font-weight: 700px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;
+}
+.latest-deals-description{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 120px;
+}
+.latest-deals-bg-container{
+    display: flex;
+    width: 740px;
+    height: 500px;
+
+}
+column{
+    flex: 1;
+    height: 100%;
+}
+.column1{
+    background-image: url(../assets/deal-bloom.png), url(../assets/deal-ana.png);
+     /* height: 400px; */
+    background-position: top left, bottom left;
+    background-repeat: no-repeat, no-repeat;
+    /* background-size: 400px, 400px; */
+    /* background-color: #f0f0f0; */
+}
+.column2{
+    background-image: url(../assets/deal-zabo.png);
+    /* height: 400px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* colorful bunch style  */
+
+.colorful-bunch{
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+    padding: 190px 300px;
+    text-align: center;
+}
+.colorful-bunch-title{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 23px;
+}
+.input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-field input{
+    padding: 18px 20px;
+    padding-right: 350px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* footer style  */
+
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.footer{
+    display: flex;
+    gap: 110px;
+    padding: 50px 100px;
+}
+.footer-left .footer-left-description{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 16px;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 110px;
+    row-gap: 30px;
+}
+.footer-links li{
+    list-style: none;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: rgb(107, 114, 128);
+}
+.footer-logo{
+    display: flex;
+    gap: 24px;
+}
+.footer-logo img{
+    width: 36px;
+    height: 36px;
+}
+
 /* responsive for mobile view */
 
 @media screen and (max-width: 576px) {
@@ -248,5 +355,28 @@ body{
     }
     .badge{
         display: none;
+    }
+    /* colorful bunch  */
+    .colorful-bunch{
+        padding: 20px;
+    }
+    .input-field input{
+        padding: 20px;
+    }
+    /* footer  */
+    .footer{
+        flex-direction: column;
+        /* text-align: left; */
+        padding: 50px 160px 50px 20px;
+    }
+    .footer-left .footer-left-description{
+        font-size: 1rem;
+    }
+    .footer-links{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-logo img{
+        width: 36px;
+        height: 36px;
     }
 }
