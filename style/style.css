@@ -30,6 +30,7 @@
 }
 body{
     /* background: rgb(30, 30, 30); */
+    background: rgba(30, 30, 30, 0.084);
 }
 .nav-bar{
     display: flex;
@@ -75,6 +76,7 @@ body{
     /* align-items: center; */
     align-items: end;
     justify-content: center;
+    margin-bottom: 120px;
 }
 .banner-left-side{
     flex: 1;
@@ -86,7 +88,7 @@ body{
     margin-bottom: 13px;
     /* line-height: 79px; */
 }
-.banner-title #unique{
+.unique{
     color: rgb(233, 90, 8);
 }
 .banner-description{
@@ -96,9 +98,61 @@ body{
 .banner-right-side{
     flex: 1;
 }
+
+/* our-plant section style  */
+
+.our-plant{
+    text-align: center;
+    margin-bottom: 83px;
+}
+.our-plant-title{
+    font-size: 3.1rem;
+    font-weight: 700px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;
+}
+.our-plant-description{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 49px;
+}
+.flower-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.flower-card{
+}
+.flower-card img{
+    border-radius: 5px;
+}
+.flower-card-title{
+    font-size: 1.3rem;
+    font-weight: 500px;
+    color: rgb(17, 17, 17);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.flower-price{
+    font-size: 1.3rem;
+    font-weight: 500px;
+    color: rgb(17, 17, 17);
+    margin-bottom: 30px;
+}
+.btn-primery{
+    font-weight: 600px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 90, 8);
+    padding: 20px 50px;
+    border: none;
+    /* border-radius: 10px; */
+}
+
 /* responsive for mobile view */
 
 @media screen and (max-width: 576px) {
+    /* NAV-BAR  */
     .nav-links li{
         display: none;
     }
@@ -112,8 +166,10 @@ body{
         width: 63px;
         height: 38px;
     }
+    /* HERO BANNER  */
     .banner{
         flex-direction: column-reverse;
+        margin-bottom: 65px;
     }
     .banner-left-side{
         margin-top: 28px;
@@ -123,5 +179,24 @@ body{
     }
     .banner-right-side img{
         width: 100%;
+    }
+    /* OUR PLANT FLOWER CARD  */
+
+    .flower-container{
+        grid-template-columns: repeat(2, 1fr);
+        /* width: 171px;
+        height: 114px; */
+        /* width: 100%; */
+    }
+    .flower-card img{
+        width: 100%;
+        /* width: 171px;
+        height: 114px; */
+    }
+    .our-plant{
+        margin: 10px;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        /* padding: 10px; */
     }
 }
