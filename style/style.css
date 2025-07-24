@@ -300,14 +300,14 @@ body {
     margin-bottom: 19px;
 }
 
+.column2-bg-content {
+    padding: 180px;
+}
+
 .column1-bg-description {
     font-weight: 600px;
     text-decoration: underline;
     color: rgb(255, 255, 255);
-}
-
-.column2-bg-content {
-    padding: 180px;
 }
 
 .column2-bg-content h1 {
