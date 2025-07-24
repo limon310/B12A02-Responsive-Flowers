@@ -21,6 +21,29 @@
         "wdth" 100;
 }
 
+/* animation */
+
+@keyframes badge-animation {
+    0%{
+        opacity: 0.5;
+        transform: translateX(30px)
+    }
+    /* 25%{
+        transform: translateY(40px);
+    } */
+    50%{
+        opacity: 0.8;
+        transform: translate(-50px);
+    }
+    /* 75%{
+        transform: translateY(-20px);
+    } */
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 /* nav-bar style  */
 
 /* common style  */
@@ -215,6 +238,7 @@ body {
     position: absolute;
     left: 350px;
     top: -150px;
+    animation: badge-animation 4s  infinite ease-in-out;
 }
 
 
