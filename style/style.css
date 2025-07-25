@@ -24,24 +24,28 @@
 /* animation */
 
 @keyframes badge-animation {
-    0%{
+    /* 0%{
         opacity: 0.5;
         transform: translateX(30px)
     }
-    /* 25%{
-        transform: translateY(40px);
-    } */
+    
     50%{
         opacity: 0.8;
         transform: translate(-50px);
     }
-    /* 75%{
-        transform: translateY(-20px);
-    } */
+    
     100%{
         opacity: 1;
         transform: translateX(0px);
-    }
+    } */
+     from{
+        opacity: 0.7;
+        transform: rotate(-360deg)
+     }
+     to{
+        opacity: 1;
+        transform: translate(0deg);
+     }
 }
 
 /* nav-bar style  */
